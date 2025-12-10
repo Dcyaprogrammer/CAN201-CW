@@ -12,7 +12,7 @@ class RyuRedirect(app_manager.RyuApp):
     OFP_VERSIONS = [ofproto_v1_3.OFP_VERSION]
     
     def __init__(self, *args, **kwargs):
-        super(RyuForward, self).__init__(*args, **kwargs)
+        super(RyuRedirect, self).__init__(*args, **kwargs)
         self.mac_to_port = {}
         self.SERVER1 = {'mac': '00:00:00:00:00:01', 'ip': '10.0.1.2'}
         self.SERVER2 = {'mac': '00:00:00:00:00:02', 'ip': '10.0.1.3'}
